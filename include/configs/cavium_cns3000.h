@@ -62,6 +62,28 @@
 
 #include <configs/cavium_cns3xxx_common.h>
 
+#ifdef CONFIG_BOOTDELAY
+#undef CONFIG_BOOTDELAY
+#endif
+#ifdef CONFIG_ZERO_BOOTDELAY_CHECK
+#undef CONFIG_ZERO_BOOTDELAY_CHECK
+#endif
+#ifdef CONFIG_BOOTCOMMAND
+#undef CONFIG_BOOTCOMMAND
+#endif
+#ifdef CONFIG_ENV_OFFSET
+#undef CONFIG_ENV_OFFSET
+#endif
+#ifdef CONFIG_ENV_ADDR 
+#undef CONFIG_ENV_ADDR 
+#endif
+#ifdef CONFIG_KERNEL_OFFSET 
+#undef CONFIG_KERNEL_OFFSET 
+#endif
+#ifdef CONFIG_BOOTARGS
+#undef CONFIG_BOOTARGS
+#endif
+
 //backup bl
 //ISSUE: fix flash partition layout.
 //ISSUE: also add logic to load the env from mmc and test+save it.
