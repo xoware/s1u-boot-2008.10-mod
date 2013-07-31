@@ -90,7 +90,7 @@
 #define CONFIG_BOOTDELAY 1
 #define CONFIG_ZERO_BOOTDELAY_CHECK
 #define CONFIG_BOOTARGS ""
-#define CONFIG_BOOTCOMMAND "cp.b 0x60060000 0x400000 0x30000; go 0x400000"
+#define CONFIG_BOOTCOMMAND "cp.b 0x60060000 0x400000 0x40000; go 0x400000"
 //#define CONFIG_BOOTCOMMAND "go 0x60060000"
 #define CONFIG_ENV_OFFSET	0x50000		/* the offset of u-boot environment on dataflash */
 #define GPIO_BKBL_SET_ISSUE 1   /* this is backup bootloader*/
